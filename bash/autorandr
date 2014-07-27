@@ -40,5 +40,3 @@ _autorandr ()
 	return 0
 }
 complete -F _autorandr autorandr
-complete -F _autorandr auto-disper
-
