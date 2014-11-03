@@ -183,10 +183,12 @@ load() {
 		echo " -> loading profile $PROFILE"
 		$LOAD_METHOD "$CONF"
 
-		[ -x "$PROFILES/$PROFILE/postswitch" ] && \
+		if [ -x "$PROFILES/$PROFILE/postswitch" ]; then
 			"$PROFILES/$PROFILE/postswitch" "$PROFILE"
-		[ -x "$PROFILES/postswitch" ] && \
+		fi
+		if [ -x "$PROFILES/postswitch" ]; then
 			"$PROFILES/postswitch" "$PROFILE"
+		fi
 	fi
 }
 
