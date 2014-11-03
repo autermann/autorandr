@@ -41,7 +41,7 @@
 XRANDR=/usr/bin/xrandr
 #XRANDR=debug_xrandr
 XDPYINFO=/usr/bin/xdpyinfo
-PROFILES=~/.autorandr/
+PROFILES=~/.autorandr
 CONFIG=~/.autorandr.conf
 
 CHANGE_PROFILE=0
